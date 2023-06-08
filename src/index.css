@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        -webkit-tap-highlight-color: transparent;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    body, #root {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #root {
+        display: grid;
+        place-items: center;
+    }
+}
