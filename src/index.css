@@ -18,3 +18,9 @@
         place-items: center;
     }
 }
+
+@layer utilities {
+    .additionalFont {
+        font-family: 'Titillium Web', sans-serif;
+    }
+}
