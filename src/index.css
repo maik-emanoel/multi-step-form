@@ -27,6 +27,18 @@
     .input-text {
         @apply py-2 px-4 rounded-sm border border-gray-100 hover:border-purpleMid focus-visible:border-purpleMid focus-visible:outline-none placeholder:text-gray-200;
     }
+
+    .disabled {
+        @apply bg-gray-100 text-gray-300;
+    }
+
+    .active {
+        @apply bg-successColor text-white;
+    }
+
+    .select {
+        @apply bg-purpleMid text-white;
+    }
 }
 
 @layer utilities {
