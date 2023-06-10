@@ -1,10 +1,26 @@
 import chevronRight from "../../assets/chevronRight.svg";
 
-export default function Header() {
+// eslint-disable-next-line react/prop-types
+export default function Header( {currentStep} ) {
+
+  function getStepClasses(stepNumber) {
+    let classes = "w-7 h-7 flex items-center justify-center rounded-full text-sm additionalFont"
+
+    if(currentStep < stepNumber) {
+      classes += " disabled"
+    } else if (currentStep === stepNumber) {
+      classes += " select"
+    } else {
+      classes += " active"
+    }
+
+    return classes
+  }
+
   return (
     <div className="flex justify-between items-center h-11 font-bold">
       <div className="flex gap-2 items-center px-2">
-        <span className="w-7 h-7 flex items-center justify-center rounded-full text-sm additionalFont">
+        <span className={getStepClasses(1)}>
           1
         </span>
         <p className="text-gray-400">Contato</p>
@@ -13,7 +29,7 @@ export default function Header() {
       <img src={chevronRight} alt="Seta para a direita" className="w-5 h-5" />
 
       <div className="flex gap-2 items-center px-2">
-        <span className="w-7 h-7 flex items-center justify-center rounded-full text-sm additionalFont">
+        <span className={getStepClasses(2)}>
           2
         </span>
         <p className="text-gray-400">Empresa</p>
@@ -22,7 +38,7 @@ export default function Header() {
       <img src={chevronRight} alt="Seta para a direita" className="w-5 h-5" />
 
       <div className="flex gap-2 items-center px-2">
-        <span className="w-7 h-7 flex items-center justify-center rounded-full text-sm additionalFont">
+        <span className={getStepClasses(3)}>
           3
         </span>
         <p className="text-gray-400">Projeto</p>
