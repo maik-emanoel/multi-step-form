@@ -1,41 +1,41 @@
 export default function Step1() {
-  return (
-    <>
-        <div className="flex flex-col gap-1">
-            <label htmlFor="company-name" className="input-title">
-                Nome da empresa
-            </label>
-            <input
-                type="text"
-                id="company-name"
-                className="input-text"
-                placeholder="Qual é o nome da empresa"
-            />
-        </div>
-
-        <div className="flex flex-col gap-1">
-            <label htmlFor="employees-number" className="input-title">
-                Número de funcionários
-            </label>
-            <input
-                type="text"
-                id="employees-number"
-                className="input-text"
-                placeholder="Digite o número de colaboradores"
-            />
-        </div>
-
-        <div className="flex flex-col gap-1">
-            <label htmlFor="about" className="input-title">
-                Sobre seu negócio
-            </label>
-            <textarea
-                type="text"
-                id="about"
-                className="input-text resize-none"
-                placeholder="Fale um pouco sobre seus produtos ou serviços"
-            />
-        </div>
-    </>
-  );
-}
+    return (
+      <>
+          <div className="flex flex-col gap-1">
+              <label htmlFor="name" className="input-title">
+                  Nome
+              </label>
+              <input
+                  type="text"
+                  id="name"
+                  className="input-text"
+                  placeholder="Como prefere ser chamado"
+              />
+          </div>
+  
+          <div className="flex flex-col gap-1">
+              <label htmlFor="phone-number" className="input-title">
+                  Telefone
+              </label>
+              <input
+                  type="text"
+                  id="phone-number"
+                  className="input-text"
+                  placeholder="Digite seu número de WhatsApp"
+              />
+          </div>
+  
+          <div className="flex flex-col gap-1">
+              <label htmlFor="phone-number" className="input-title">
+                    E-mail
+              </label>
+              <input
+                  type="email"
+                  id="email"
+                  className="input-text"
+                  placeholder="Digite seu e-mail"
+              />
+          </div>
+      </>
+    );
+  }
