@@ -1,4 +1,5 @@
-export default function Step1() {
+// eslint-disable-next-line react/prop-types
+export default function Step1({onInputChange}) {
     return (
       <>
           <div className="flex flex-col gap-1">
@@ -6,10 +7,11 @@ export default function Step1() {
                   Nome
               </label>
               <input
-                  type="text"
-                  id="name"
-                  className="input-text"
-                  placeholder="Como prefere ser chamado"
+                    type="text"
+                    id="name"
+                    className="input-text"
+                    placeholder="Como prefere ser chamado"
+                    onChange={onInputChange}
               />
           </div>
   
@@ -22,6 +24,7 @@ export default function Step1() {
                   id="phone-number"
                   className="input-text"
                   placeholder="Digite seu número de WhatsApp"
+                  onChange={onInputChange}
               />
           </div>
   
@@ -34,6 +37,7 @@ export default function Step1() {
                   id="email"
                   className="input-text"
                   placeholder="Digite seu e-mail"
+                  onChange={onInputChange}
               />
           </div>
       </>

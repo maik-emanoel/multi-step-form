@@ -1,4 +1,5 @@
-export default function Step2() {
+// eslint-disable-next-line react/prop-types
+export default function Step2( {onInputChange} ) {
     return (
       <>
           <div className="flex flex-col gap-1">
@@ -10,6 +11,7 @@ export default function Step2() {
                   id="company-name"
                   className="input-text"
                   placeholder="Qual é o nome da empresa"
+                  onChange={onInputChange}
               />
           </div>
   
@@ -22,6 +24,7 @@ export default function Step2() {
                   id="employees-number"
                   className="input-text"
                   placeholder="Digite o número de colaboradores"
+                  onChange={onInputChange}
               />
           </div>
   
@@ -34,6 +37,7 @@ export default function Step2() {
                   className="input-text resize-none"
                   placeholder="Fale um pouco sobre seus produtos ou serviços"
                   rows="5"
+                  onChange={onInputChange}
               />
           </div>
       </>
