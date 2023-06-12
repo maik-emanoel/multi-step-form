@@ -18,6 +18,23 @@ export default {
         successColor: '#1D8841'
       },
     },
+
+    screens:{
+      '2xl': {'max': '1535px'},
+      // => @media (max-width: 1535px) { ... }
+
+      'xl': {'max': '1279px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'lg': {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '640px'},
+      // => @media (max-width: 640px) { ... }
+
+      'sm': {'max': '500px'},
+      // => @media (max-width: 425px) { ... }
+    }
   },
   plugins: [],
 }
