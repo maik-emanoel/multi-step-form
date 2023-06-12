@@ -11,6 +11,7 @@ export default function App() {
   const [currentStep, setCurrentStep] = useState(1);
   const [step1Filled, setStep1Filled] = useState(false);
   const [step2Filled, setStep2Filled] = useState(false);
+  const [step3Filled, setStep3Filled] = useState(false)
   const [responseSent, setResponseSent] = useState(false);
 
   const handleStep1InputChange = () => {
@@ -33,10 +34,18 @@ export default function App() {
     setStep2Filled(isStep2Filled);
   };
 
+  const handleStep3InputChange = () => {
+    const projectObjectivesInput = document.getElementById('project-objectives')
+    const isStep3Filled = projectObjectivesInput
+
+    setStep3Filled(isStep3Filled)
+  }
+
   const handleNextStep = () => {
     setCurrentStep((prevStep) => prevStep + 1);
     setStep1Filled(false);
     setStep2Filled(false);
+    setStep3Filled(false)
   };
 
   const handlePreviousStep = () => {
@@ -72,7 +81,7 @@ export default function App() {
             {currentStep === 2 && (
               <Step2 onInputChange={handleStep2InputChange} />
             )}
-            {currentStep === 3 && <Step3 />}
+            {currentStep === 3 && <Step3 onInputChange={handleStep3InputChange} />}
           </main>
 
           <div
@@ -90,6 +99,7 @@ export default function App() {
               <Button
                 name="Enviar Resposta"
                 handleNextStep={handleResponseSubmit}
+                disabled={currentStep === 3 && !step3Filled}
               />
             ) : (
               <Button
