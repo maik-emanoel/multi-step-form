@@ -74,7 +74,7 @@ export default function App() {
           <Header currentStep={currentStep} />
           <hr className="my-8 bg-gray-100 opacity-40" />
 
-          <main className="flex flex-col gap-4 mb-8">
+          <main className="mb-8">
             {currentStep === 1 && (
               <Step1 onInputChange={handleStep1InputChange} />
             )}

@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 export default function Step3( {onInputChange} ) {
     return (
-      <>
+      <form className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
               <label htmlFor="project-objectives" className="input-title">
                 Objetivos do projeto
@@ -14,6 +14,6 @@ export default function Step3( {onInputChange} ) {
                   onChange={onInputChange}
               />
           </div>
-      </>
+      </form>
     );
   }

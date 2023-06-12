@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 export default function Step2( {onInputChange} ) {
     return (
-      <>
+      <form className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
               <label htmlFor="company-name" className="input-title">
                   Nome da empresa
@@ -40,6 +40,6 @@ export default function Step2( {onInputChange} ) {
                   onChange={onInputChange}
               />
           </div>
-      </>
+      </form>
     );
   }
