@@ -48,7 +48,12 @@ export default function App() {
   };
 
   const SuccessMessage = () => {
-    return <h2>Resposta enviada com sucesso!</h2>;
+    return (
+        <h2 className="font-bold text-lg text-gray-400 flex gap-2 justify-center items-center">
+          <span className="w-[2px] h-5 bg-purpleMid"></span>
+          Resposta enviada com sucesso!
+        </h2>
+    )
   };
 
   return (
