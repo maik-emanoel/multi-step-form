@@ -17,6 +17,24 @@
         display: grid;
         place-items: center;
     }
+
+    @media (max-width: 430px) {
+        :root {
+            font-size: 90%;
+        }
+    }
+
+    @media (max-width: 385px) {
+        :root {
+            font-size: 80%;
+        }
+    }
+
+    @media (max-width: 340px) {
+        :root {
+            font-size: 70%;
+        }
+    }
 }
 
 @layer components {
