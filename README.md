@@ -1,4 +1,4 @@
-<h1 align="center"> Formulário Multi-step - BoraCodar#23 </h1>
+<h1 align="center"> Formulário Multi-step | BoraCodar#23 </h1>
 
 ![preview](./.github/preview.png)
 
