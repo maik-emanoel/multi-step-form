@@ -14,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Este projeto é Formulário Multi-step que permiti que os usuários preencham informações em várias etapas organizadas, melhorando a usabilidade e a experiência do usuário.<br>
+Este projeto é Formulário Multi-step que permite que os usuários preencham informações em várias etapas organizadas, melhorando a usabilidade e a experiência do usuário.<br>
 
 Projeto construído a partir do layout proposto no desafio [#BoraCodar23](https://boracodar.dev/) realizado pela [Rocketseat](https://rocketseat.com.br).
 Após o desenvolvimento do projeto inicial, adicionei novas features, tais quais:
