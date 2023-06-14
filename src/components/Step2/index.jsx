@@ -20,7 +20,7 @@ export default function Step2( {onInputChange} ) {
                   Número de funcionários
               </label>
               <input
-                  type="text"
+                  type="number"
                   id="employees-number"
                   className="input-text"
                   placeholder="Digite o número de colaboradores"
