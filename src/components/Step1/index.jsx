@@ -1,5 +1,18 @@
 // eslint-disable-next-line react/prop-types
 export default function Step1({onInputChange}) {
+    const regex = /^\d+$/
+
+    const handleAcceptOnlyNumbers = (e) => {
+        if(!regex.test(e.key)
+        && e.key !== 'Backspace' 
+        && e.key !== 'Delete' 
+        && e.key !== 'ArrowLeft' 
+        && e.key !== 'ArrowRight'
+        && e.key !== ' ') {
+            e.preventDefault()
+        }
+    }
+
     return (
       <form className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
@@ -25,6 +38,7 @@ export default function Step1({onInputChange}) {
                   className="input-text"
                   placeholder="Digite seu número de WhatsApp"
                   onChange={onInputChange}
+                  onKeyDown={handleAcceptOnlyNumbers}
               />
           </div>
   
